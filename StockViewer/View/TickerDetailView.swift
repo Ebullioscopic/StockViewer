@@ -2,7 +2,7 @@
 //  TickerDetailView.swift
 //  StockApp
 //
-//  Created by sarim khan on 06/07/2023.
+//  Created by hariharan mudaliar on 06/10/2024.
 //
 
 import SwiftUI

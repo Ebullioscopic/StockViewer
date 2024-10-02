@@ -2,13 +2,26 @@
 //  Helper.swift
 //  StockApp
 //
-//  Created by sarim khan on 03/07/2023.
+//  Created by hariharan mudaliar on 02/10/2024.
 //
 
 import Foundation
 
+class Helper {
+    static var POLYGON_API_KEY: String {
+        return getAPIKey(for: "POLYGON_API_KEY")
+    }
 
-class Helper{
-    static var POLYGON_API_KEY:String = "WfXScxn3SDkWP3KBtBg_PnZ9biECsXeR"
-    static var API_kEY:String = "05A42LLKSCG3OLU1"
+    static var API_kEY: String {
+        return getAPIKey(for: "API_kEY")
+    }
+
+    private static func getAPIKey(for key: String) -> String {
+        guard let filePath = Bundle.main.path(forResource: "APIKeys", ofType: "plist"),
+              let plist = NSDictionary(contentsOfFile: filePath),
+              let value = plist[key] as? String else {
+            fatalError("Couldn't find key \(key) in APIKeys.plist")
+        }
+        return value
+    }
 }

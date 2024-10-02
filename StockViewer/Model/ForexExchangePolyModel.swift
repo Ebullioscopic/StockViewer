@@ -2,7 +2,7 @@
 //  ForexExchangePolyModel.swift
 //  StockApp
 //
-//  Created by sarim khan on 20/07/2023.
+//  Created by hariharan mudaliar on 20/10/2024.
 //
 
 import Foundation

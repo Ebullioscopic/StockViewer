@@ -2,7 +2,7 @@
 //  ForexViewModel.swift
 //  StockApp
 //
-//  Created by sarim khan on 17/07/2023.
+//  Created by hariharan mudaliar on 17/10/2024.
 //
 
 import Foundation

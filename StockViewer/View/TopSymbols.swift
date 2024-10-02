@@ -2,7 +2,7 @@
 //  TopSymbols.swift
 //  StockApp
 //
-//  Created by sarim khan on 11/07/2023.
+//  Created by hariharan mudaliar on 11/10/2024.
 //
 
 import SwiftUI

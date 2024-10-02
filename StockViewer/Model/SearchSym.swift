@@ -2,7 +2,7 @@
 //  SearchSym.swift
 //  StockApp
 //
-//  Created by sarim khan on 03/07/2023.
+//  Created by hariharan mudaliar on 02/10/2024.
 //
 
 import Foundation

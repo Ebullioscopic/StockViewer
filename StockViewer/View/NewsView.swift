@@ -2,7 +2,7 @@
 //  NewsView.swift
 //  StockApp
 //
-//  Created by sarim khan on 13/07/2023.
+//  Created by hariharan mudaliar on 13/10/2024.
 //
 
 import SwiftUI
