@@ -1,15 +1,15 @@
 //
-//  StockViewerApp.swift
-//  StockViewer
+//  StockAppApp.swift
+//  StockApp
 //
-//  Created by admin63 on 02/10/24.
+//  Created by sarim khan on 03/07/2023.
 //
 
 import SwiftUI
 import SwiftData
 
 @main
-struct StockViewer: App {
+struct StockAppApp: App {
 
     var body: some Scene {
         WindowGroup {

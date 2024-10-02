@@ -11,6 +11,29 @@
 		F5AF27712CACF98300F185E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27702CACF98300F185E7 /* ContentView.swift */; };
 		F5AF27732CACF98300F185E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AF27722CACF98300F185E7 /* Assets.xcassets */; };
 		F5AF27762CACF98300F185E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AF27752CACF98300F185E7 /* Preview Assets.xcassets */; };
+		F5AF27A52CAD928E00F185E7 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27852CAD928E00F185E7 /* CurrencyModel.swift */; };
+		F5AF27A62CAD928E00F185E7 /* ForexExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27862CAD928E00F185E7 /* ForexExchangeModel.swift */; };
+		F5AF27A72CAD928E00F185E7 /* ForexExchangePolyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27872CAD928E00F185E7 /* ForexExchangePolyModel.swift */; };
+		F5AF27A82CAD928E00F185E7 /* IntraDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27882CAD928E00F185E7 /* IntraDay.swift */; };
+		F5AF27A92CAD928E00F185E7 /* NewsSentimentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27892CAD928E00F185E7 /* NewsSentimentModel.swift */; };
+		F5AF27AA2CAD928E00F185E7 /* SearchSym.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF278A2CAD928E00F185E7 /* SearchSym.swift */; };
+		F5AF27AB2CAD928E00F185E7 /* TopTraded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF278B2CAD928E00F185E7 /* TopTraded.swift */; };
+		F5AF27AC2CAD928E00F185E7 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF278D2CAD928E00F185E7 /* Ticker.swift */; };
+		F5AF27AD2CAD928E00F185E7 /* ForexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF278F2CAD928E00F185E7 /* ForexView.swift */; };
+		F5AF27AE2CAD928E00F185E7 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27902CAD928E00F185E7 /* NewsView.swift */; };
+		F5AF27AF2CAD928E00F185E7 /* TickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27912CAD928E00F185E7 /* TickerDetailView.swift */; };
+		F5AF27B02CAD928E00F185E7 /* TopSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27922CAD928E00F185E7 /* TopSymbols.swift */; };
+		F5AF27B12CAD928E00F185E7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27942CAD928E00F185E7 /* Helper.swift */; };
+		F5AF27B22CAD928E00F185E7 /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27962CAD928E00F185E7 /* StockService.swift */; };
+		F5AF27B32CAD928E00F185E7 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27982CAD928E00F185E7 /* ServiceProtocol.swift */; };
+		F5AF27B42CAD928E00F185E7 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF279A2CAD928E00F185E7 /* AppNavigation.swift */; };
+		F5AF27B52CAD928E00F185E7 /* ForexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF279C2CAD928E00F185E7 /* ForexViewModel.swift */; };
+		F5AF27B62CAD928E00F185E7 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF279D2CAD928E00F185E7 /* NewsViewModel.swift */; };
+		F5AF27B72CAD928E00F185E7 /* TickerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF279E2CAD928E00F185E7 /* TickerDetailViewModel.swift */; };
+		F5AF27B82CAD928E00F185E7 /* TickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF279F2CAD928E00F185E7 /* TickerViewModel.swift */; };
+		F5AF27B92CAD928E00F185E7 /* TopSymbolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27A02CAD928E00F185E7 /* TopSymbolsViewModel.swift */; };
+		F5AF27BA2CAD928E00F185E7 /* digital_currency_list.csv in Resources */ = {isa = PBXBuildFile; fileRef = F5AF27A22CAD928E00F185E7 /* digital_currency_list.csv */; };
+		F5AF27BB2CAD928E00F185E7 /* physical_currency_list.csv in Resources */ = {isa = PBXBuildFile; fileRef = F5AF27A32CAD928E00F185E7 /* physical_currency_list.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +42,30 @@
 		F5AF27702CACF98300F185E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5AF27722CACF98300F185E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5AF27752CACF98300F185E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5AF27852CAD928E00F185E7 /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		F5AF27862CAD928E00F185E7 /* ForexExchangeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForexExchangeModel.swift; sourceTree = "<group>"; };
+		F5AF27872CAD928E00F185E7 /* ForexExchangePolyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForexExchangePolyModel.swift; sourceTree = "<group>"; };
+		F5AF27882CAD928E00F185E7 /* IntraDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntraDay.swift; sourceTree = "<group>"; };
+		F5AF27892CAD928E00F185E7 /* NewsSentimentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsSentimentModel.swift; sourceTree = "<group>"; };
+		F5AF278A2CAD928E00F185E7 /* SearchSym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSym.swift; sourceTree = "<group>"; };
+		F5AF278B2CAD928E00F185E7 /* TopTraded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopTraded.swift; sourceTree = "<group>"; };
+		F5AF278D2CAD928E00F185E7 /* Ticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		F5AF278F2CAD928E00F185E7 /* ForexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForexView.swift; sourceTree = "<group>"; };
+		F5AF27902CAD928E00F185E7 /* NewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		F5AF27912CAD928E00F185E7 /* TickerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickerDetailView.swift; sourceTree = "<group>"; };
+		F5AF27922CAD928E00F185E7 /* TopSymbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSymbols.swift; sourceTree = "<group>"; };
+		F5AF27942CAD928E00F185E7 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F5AF27962CAD928E00F185E7 /* StockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
+		F5AF27982CAD928E00F185E7 /* ServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		F5AF279A2CAD928E00F185E7 /* AppNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		F5AF279C2CAD928E00F185E7 /* ForexViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForexViewModel.swift; sourceTree = "<group>"; };
+		F5AF279D2CAD928E00F185E7 /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		F5AF279E2CAD928E00F185E7 /* TickerDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickerDetailViewModel.swift; sourceTree = "<group>"; };
+		F5AF279F2CAD928E00F185E7 /* TickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickerViewModel.swift; sourceTree = "<group>"; };
+		F5AF27A02CAD928E00F185E7 /* TopSymbolsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSymbolsViewModel.swift; sourceTree = "<group>"; };
+		F5AF27A22CAD928E00F185E7 /* digital_currency_list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = digital_currency_list.csv; sourceTree = "<group>"; };
+		F5AF27A32CAD928E00F185E7 /* physical_currency_list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = physical_currency_list.csv; sourceTree = "<group>"; };
+		F5AF27E02CAD939300F185E7 /* StockViewer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = StockViewer.entitlements; path = StockViewer/StockViewer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +82,16 @@
 		F5AF27622CACF98300F185E7 = {
 			isa = PBXGroup;
 			children = (
+				F5AF27E02CAD939300F185E7 /* StockViewer.entitlements */,
+				F5AF27A42CAD928E00F185E7 /* Csv File */,
+				F5AF27952CAD928E00F185E7 /* Helper */,
+				F5AF278C2CAD928E00F185E7 /* Model */,
+				F5AF279B2CAD928E00F185E7 /* Navigation */,
+				F5AF27992CAD928E00F185E7 /* Protocol */,
+				F5AF27972CAD928E00F185E7 /* Services */,
+				F5AF278E2CAD928E00F185E7 /* Ticker Symbols */,
+				F5AF27932CAD928E00F185E7 /* View */,
+				F5AF27A12CAD928E00F185E7 /* ViewModel */,
 				F5AF276D2CACF98300F185E7 /* StockViewer */,
 				F5AF276C2CACF98300F185E7 /* Products */,
 			);
@@ -65,6 +122,101 @@
 				F5AF27752CACF98300F185E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F5AF278C2CAD928E00F185E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF27852CAD928E00F185E7 /* CurrencyModel.swift */,
+				F5AF27862CAD928E00F185E7 /* ForexExchangeModel.swift */,
+				F5AF27872CAD928E00F185E7 /* ForexExchangePolyModel.swift */,
+				F5AF27882CAD928E00F185E7 /* IntraDay.swift */,
+				F5AF27892CAD928E00F185E7 /* NewsSentimentModel.swift */,
+				F5AF278A2CAD928E00F185E7 /* SearchSym.swift */,
+				F5AF278B2CAD928E00F185E7 /* TopTraded.swift */,
+			);
+			name = Model;
+			path = StockViewer/Model;
+			sourceTree = "<group>";
+		};
+		F5AF278E2CAD928E00F185E7 /* Ticker Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF278D2CAD928E00F185E7 /* Ticker.swift */,
+			);
+			name = "Ticker Symbols";
+			path = "StockViewer/Ticker Symbols";
+			sourceTree = "<group>";
+		};
+		F5AF27932CAD928E00F185E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF278F2CAD928E00F185E7 /* ForexView.swift */,
+				F5AF27902CAD928E00F185E7 /* NewsView.swift */,
+				F5AF27912CAD928E00F185E7 /* TickerDetailView.swift */,
+				F5AF27922CAD928E00F185E7 /* TopSymbols.swift */,
+			);
+			name = View;
+			path = StockViewer/View;
+			sourceTree = "<group>";
+		};
+		F5AF27952CAD928E00F185E7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF27942CAD928E00F185E7 /* Helper.swift */,
+			);
+			name = Helper;
+			path = StockViewer/Helper;
+			sourceTree = "<group>";
+		};
+		F5AF27972CAD928E00F185E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF27962CAD928E00F185E7 /* StockService.swift */,
+			);
+			name = Services;
+			path = StockViewer/Services;
+			sourceTree = "<group>";
+		};
+		F5AF27992CAD928E00F185E7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF27982CAD928E00F185E7 /* ServiceProtocol.swift */,
+			);
+			name = Protocol;
+			path = StockViewer/Protocol;
+			sourceTree = "<group>";
+		};
+		F5AF279B2CAD928E00F185E7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF279A2CAD928E00F185E7 /* AppNavigation.swift */,
+			);
+			name = Navigation;
+			path = StockViewer/Navigation;
+			sourceTree = "<group>";
+		};
+		F5AF27A12CAD928E00F185E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF279C2CAD928E00F185E7 /* ForexViewModel.swift */,
+				F5AF279D2CAD928E00F185E7 /* NewsViewModel.swift */,
+				F5AF279E2CAD928E00F185E7 /* TickerDetailViewModel.swift */,
+				F5AF279F2CAD928E00F185E7 /* TickerViewModel.swift */,
+				F5AF27A02CAD928E00F185E7 /* TopSymbolsViewModel.swift */,
+			);
+			name = ViewModel;
+			path = StockViewer/ViewModel;
+			sourceTree = "<group>";
+		};
+		F5AF27A42CAD928E00F185E7 /* Csv File */ = {
+			isa = PBXGroup;
+			children = (
+				F5AF27A22CAD928E00F185E7 /* digital_currency_list.csv */,
+				F5AF27A32CAD928E00F185E7 /* physical_currency_list.csv */,
+			);
+			name = "Csv File";
+			path = "StockViewer/Csv File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +277,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AF27BA2CAD928E00F185E7 /* digital_currency_list.csv in Resources */,
 				F5AF27762CACF98300F185E7 /* Preview Assets.xcassets in Resources */,
+				F5AF27BB2CAD928E00F185E7 /* physical_currency_list.csv in Resources */,
 				F5AF27732CACF98300F185E7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +291,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5AF27B72CAD928E00F185E7 /* TickerDetailViewModel.swift in Sources */,
+				F5AF27A92CAD928E00F185E7 /* NewsSentimentModel.swift in Sources */,
+				F5AF27B32CAD928E00F185E7 /* ServiceProtocol.swift in Sources */,
+				F5AF27B02CAD928E00F185E7 /* TopSymbols.swift in Sources */,
+				F5AF27B22CAD928E00F185E7 /* StockService.swift in Sources */,
+				F5AF27B12CAD928E00F185E7 /* Helper.swift in Sources */,
+				F5AF27AA2CAD928E00F185E7 /* SearchSym.swift in Sources */,
+				F5AF27AB2CAD928E00F185E7 /* TopTraded.swift in Sources */,
+				F5AF27B62CAD928E00F185E7 /* NewsViewModel.swift in Sources */,
+				F5AF27AD2CAD928E00F185E7 /* ForexView.swift in Sources */,
+				F5AF27B82CAD928E00F185E7 /* TickerViewModel.swift in Sources */,
 				F5AF27712CACF98300F185E7 /* ContentView.swift in Sources */,
+				F5AF27A82CAD928E00F185E7 /* IntraDay.swift in Sources */,
 				F5AF276F2CACF98300F185E7 /* StockViewerApp.swift in Sources */,
+				F5AF27B52CAD928E00F185E7 /* ForexViewModel.swift in Sources */,
+				F5AF27A52CAD928E00F185E7 /* CurrencyModel.swift in Sources */,
+				F5AF27AC2CAD928E00F185E7 /* Ticker.swift in Sources */,
+				F5AF27AE2CAD928E00F185E7 /* NewsView.swift in Sources */,
+				F5AF27AF2CAD928E00F185E7 /* TickerDetailView.swift in Sources */,
+				F5AF27B42CAD928E00F185E7 /* AppNavigation.swift in Sources */,
+				F5AF27B92CAD928E00F185E7 /* TopSymbolsViewModel.swift in Sources */,
+				F5AF27A62CAD928E00F185E7 /* ForexExchangeModel.swift in Sources */,
+				F5AF27A72CAD928E00F185E7 /* ForexExchangePolyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StockViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = K3H644588Q;
+				DEVELOPMENT_TEAM = 9Y64TRM77N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StockViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = K3H644588Q;
+				DEVELOPMENT_TEAM = 9Y64TRM77N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
