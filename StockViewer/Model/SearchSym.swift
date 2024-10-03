@@ -15,15 +15,15 @@ class SearchSym: Codable {
 
 @Model
 class BestMatch: Codable , Hashable {
-    @Attribute(.unique) let the1Symbol:String
-    let the2Name: String
-    let the3Type:String
-    let the4Region:String
-    let the5MarketOpen:String
-    let the6MarketClose:String
-    let the7Timezone:String
-    let the8Currency: String
-    let the9MatchScore: String
+    @Attribute(.unique) var the1Symbol:String
+    var the2Name: String
+    var the3Type:String
+    var the4Region:String
+    var the5MarketOpen:String
+    var the6MarketClose:String
+    var the7Timezone:String
+    var the8Currency: String
+    var the9MatchScore: String
     
     enum CodingKeys: String, CodingKey {
            case the1Symbol = "1. symbol"
