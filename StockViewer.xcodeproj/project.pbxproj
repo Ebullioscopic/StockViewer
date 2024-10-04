@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F56B11502CAF961900EAC8EB /* MarketStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56B114F2CAF961900EAC8EB /* MarketStatus.swift */; };
 		F5AF276F2CACF98300F185E7 /* StockViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF276E2CACF98300F185E7 /* StockViewerApp.swift */; };
 		F5AF27712CACF98300F185E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AF27702CACF98300F185E7 /* ContentView.swift */; };
 		F5AF27732CACF98300F185E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AF27722CACF98300F185E7 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F56B114F2CAF961900EAC8EB /* MarketStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketStatus.swift; sourceTree = "<group>"; };
 		F5AF276B2CACF98300F185E7 /* StockViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AF276E2CACF98300F185E7 /* StockViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewerApp.swift; sourceTree = "<group>"; };
 		F5AF27702CACF98300F185E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				F5AF27892CAD928E00F185E7 /* NewsSentimentModel.swift */,
 				F5AF278A2CAD928E00F185E7 /* SearchSym.swift */,
 				F5AF278B2CAD928E00F185E7 /* TopTraded.swift */,
+				F56B114F2CAF961900EAC8EB /* MarketStatus.swift */,
 			);
 			name = Model;
 			path = StockViewer/Model;
@@ -312,6 +315,7 @@
 				F5AF27B82CAD928E00F185E7 /* TickerViewModel.swift in Sources */,
 				F5AF27712CACF98300F185E7 /* ContentView.swift in Sources */,
 				F5AF27A82CAD928E00F185E7 /* IntraDay.swift in Sources */,
+				F56B11502CAF961900EAC8EB /* MarketStatus.swift in Sources */,
 				F5AF276F2CACF98300F185E7 /* StockViewerApp.swift in Sources */,
 				F5AF27B52CAD928E00F185E7 /* ForexViewModel.swift in Sources */,
 				F5AF27A52CAD928E00F185E7 /* CurrencyModel.swift in Sources */,
@@ -455,7 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StockViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = 9Y64TRM77N;
+				DEVELOPMENT_TEAM = K3H644588Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -468,7 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karthikinformationtechnology.StockViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FarmHandStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -484,7 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StockViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = 9Y64TRM77N;
+				DEVELOPMENT_TEAM = K3H644588Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -497,7 +501,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karthikinformationtechnology.StockViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FarmHandStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

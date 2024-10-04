@@ -159,5 +159,11 @@ class StockService: ServiceProtocol {
     }
     
     
+    func fetchMarketStatus() async throws -> MarketStatus {
+        let url = URL(string: "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=\(Helper.API_kEY)")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let marketStatus = try JSONDecoder().decode(MarketStatus.self, from: data)
+        return marketStatus
+    }
     
 }

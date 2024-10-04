@@ -159,3 +159,52 @@ enum TickerState {
     }
 }
 
+////////////////////////////////////////__________________________________________________
+//import Foundation
+//import Observation
+//import SwiftUI
+//
+//enum TickerState {
+//    case Initial
+//    case Loading
+//    case Loaded(data: SearchSym)
+//    case Error(error: String)
+//}
+//
+//@Observable class TickerViewModel {
+//    var searchSymbol: String = ""
+//    var tickerState: TickerState = .Initial
+//    
+//    @ObservationIgnored private let _$observationRegistrar = Observation.ObservationRegistrar()
+//    
+//    private let stockService: StockService
+//    
+//    init(stockService: StockService) {
+//        self.stockService = stockService
+//    }
+//    
+//    internal nonisolated func access<Member>(keyPath: KeyPath<TickerViewModel, Member>) {
+//        _$observationRegistrar.access(self, keyPath: keyPath)
+//    }
+//    
+//    internal nonisolated func withMutation<Member, MutationResult>(
+//        keyPath: KeyPath<TickerViewModel, Member>,
+//        _ mutation: () throws -> MutationResult
+//    ) rethrows -> MutationResult {
+//        try _$observationRegistrar.withMutation(of: self, keyPath: keyPath, mutation)
+//    }
+//    
+//    func getSearchStock() async {
+//        tickerState = .Loading
+//        if searchSymbol.isEmpty {
+//            tickerState = .Initial
+//            return
+//        }
+//        do {
+//            let data = try await stockService.searchTicker(sym: searchSymbol.capitalized)
+//            tickerState = .Loaded(data: data)
+//        } catch {
+//            tickerState = .Error(error: error.localizedDescription)
+//        }
+//    }
+//}
