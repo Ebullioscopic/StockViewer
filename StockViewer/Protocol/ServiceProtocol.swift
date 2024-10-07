@@ -21,4 +21,6 @@ protocol ServiceProtocol {
     func forexExchange(fromCurrency:String,toCurrency:String) async throws -> ForexExchangeModel
     
     func forexExchangePoly(fromCurrency:String,toCurrency:String) async throws -> ForexExchangePolyModel
+    
+    func fetchMarketStatus() async throws -> MarketStatus
 }
