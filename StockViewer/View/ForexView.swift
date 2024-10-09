@@ -130,123 +130,120 @@ struct MyPickerView:View {
 //    @State private var forexViewModel = ForexViewModel(stockService: StockService())
 //    
 //    var body: some View {
-//        VStack(spacing: 20) {
-//            // Currency Input Fields
-//            currencyInputSection(
-//                currencyCode: forexViewModel.firstCurrencyCode,
-//                amount: $forexViewModel.firstCurrency,
-//                showSheet: $forexViewModel.showFirstSheet
-//            )
-//            
-//            currencyInputSection(
-//                currencyCode: forexViewModel.secondCurrencyCode,
-//                amount: $forexViewModel.secondCurrency,
-//                showSheet: $forexViewModel.showSecondSheet
-//            )
-//            
-//            // Exchange Value Display
-//            Text("Exchange Value: \(forexViewModel.exchangeValue, specifier: "%.2f")")
-//                .font(.largeTitle) // Increase font size for better visibility
-//                .padding(.top, 10)
-//
-//            // Show loading indicator if needed
-//            if forexViewModel.isLoading {
-//                ProgressView()
-//                    .progressViewStyle(CircularProgressViewStyle(tint: .blue))
-//                    .scaleEffect(1.0) // Default scale
-//                    .padding()
+//        VStack {
+//            VStack(spacing: 24) {
+//                
+//                // First currency selection and input
+//                HStack {
+//                    Text(forexViewModel.firstCurrencyCode)
+//                        .font(.title2)
+//                        .fontWeight(.bold)
+//                    
+//                    Image(systemName: "chevron.down")
+//                        .padding(.trailing, 16)
+//                        .onTapGesture {
+//                            forexViewModel.showFirstSheet.toggle()
+//                        }
+//                    
+//                    TextField("Enter amount", text: $forexViewModel.firstCurrency)
+//                        .frame(maxWidth: UIScreen.main.bounds.size.width * 0.6)
+//                        .textFieldStyle(RoundedBorderTextFieldStyle())
+//                        .keyboardType(.decimalPad)
+//                }
+//                .padding(.top, 16)
+//                
+//                // Second currency selection and input
+//                HStack {
+//                    Text(forexViewModel.secondCurrencyCode)
+//                        .font(.title2)
+//                        .fontWeight(.bold)
+//                    
+//                    Image(systemName: "chevron.down")
+//                        .padding(.trailing, 16)
+//                        .onTapGesture {
+//                            forexViewModel.showSecondSheet.toggle()
+//                        }
+//                    
+//                    TextField("Enter amount", text: $forexViewModel.secondCurrency)
+//                        .frame(maxWidth: UIScreen.main.bounds.size.width * 0.6)
+//                        .textFieldStyle(RoundedBorderTextFieldStyle())
+//                        .keyboardType(.decimalPad)
+//                }
+//                
+//                // Display the calculated exchange value
+//                Text("Exchange Value: \(forexViewModel.exchangeValue, specifier: "%.2f")")
+//                    .font(.title3)
+//                    .fontWeight(.medium)
+//                
+//                // Loading indicator while fetching data
+//                if forexViewModel.isLoading {
+//                    ProgressView()
+//                }
+//                
+//                Spacer()
 //            }
+//            .padding()
 //            
-//            Spacer()
+//            // Update exchange rate on currency code changes
+//            .onChange(of: [forexViewModel.firstCurrencyCode, forexViewModel.secondCurrencyCode]) {
+//                Task {
+//                    await forexViewModel.currencyExchangeRate()
+//                }
+//            }
+//            // Update exchange calculation on value changes
+//            .onChange(of: [forexViewModel.firstCurrency, forexViewModel.secondCurrency]) {
+//                forexViewModel.calculateCurrencyExchange()
+//            }
+//            // Show sheets for currency pickers
+//            .sheet(isPresented: $forexViewModel.showFirstSheet) {
+//                CurrencyPickerView(currencyCode: $forexViewModel.firstCurrencyCode, forexViewModel: $forexViewModel)
+//            }
+//            .sheet(isPresented: $forexViewModel.showSecondSheet) {
+//                CurrencyPickerView(currencyCode: $forexViewModel.secondCurrencyCode, forexViewModel: $forexViewModel)
+//            }
 //        }
-//        .padding()
-//        .navigationTitle("Forex")
+//        .navigationTitle("Forex Converter")
 //        .onAppear {
 //            forexViewModel.readCsv(inputFile: "physical_currency_list.csv")
 //            forexViewModel.dataw()
 //        }
-//        .onChange(of: forexViewModel.firstCurrencyCode) { _ in
-//            Task {
-//                await forexViewModel.currencyExchangeRate()
-//            }
-//        }
-//        .onChange(of: forexViewModel.secondCurrencyCode) { _ in
-//            Task {
-//                await forexViewModel.currencyExchangeRate()
-//            }
-//        }
-//        .sheet(isPresented: $forexViewModel.showFirstSheet) {
-//            MyPickerView(myCurrencyCode: $forexViewModel.firstCurrencyCode, currencyCode: $forexViewModel.searchCurrencyModel, forexViewModel: $forexViewModel)
-//                .presentationDetents([.height(300)]) // Set a fixed height for the picker
-//        }
-//        .sheet(isPresented: $forexViewModel.showSecondSheet) {
-//            MyPickerView(myCurrencyCode: $forexViewModel.secondCurrencyCode, currencyCode: $forexViewModel.searchCurrencyModel, forexViewModel: $forexViewModel)
-//                .presentationDetents([.height(300)]) // Set a fixed height for the picker
-//        }
-//    }
-//    
-//    // Function to create a Currency Input Section
-//    private func currencyInputSection(currencyCode: String, amount: Binding<String>, showSheet: Binding<Bool>) -> some View {
-//        HStack {
-//            Text(currencyCode)
-//                .font(.title) // Make currency code larger
-//                .padding(.trailing, 8)
-//            
-//            Image(systemName: "chevron.down")
-//                .foregroundColor(.gray)
-//                .onTapGesture {
-//                    showSheet.wrappedValue.toggle()
-//                }
-//            
-//            TextField("Enter amount", text: amount)
-//                .keyboardType(.decimalPad)
-//                .font(.title) // Increase font size for the text field
-//                .textFieldStyle(RoundedBorderTextFieldStyle())
-//                .frame(maxWidth: 100) // Limit input field width for a clean look
-//        }
-//        .padding()
-//        .background(Color(.systemBackground)) // Match iOS design
-//        .cornerRadius(8)
-//        .shadow(radius: 1)
 //    }
 //}
 //
-//// Picker View for selecting currency
-//struct MyPickerView: View {
+//// Currency Picker View for selecting currencies
+//struct CurrencyPickerView: View {
 //    
-//    @Binding var myCurrencyCode: String
-//    @Binding var currencyCode: [CurrencyModel]
+//    @Binding var currencyCode: String
 //    @Binding var forexViewModel: ForexViewModel
 //    
 //    var body: some View {
 //        VStack {
+//            // Search text field
 //            TextField("Search", text: $forexViewModel.searchTextField)
 //                .textFieldStyle(RoundedBorderTextFieldStyle())
 //                .padding()
 //            
-//            List {
-//                ForEach(currencyCode) { datum in
+//            // Currency list picker
+//            Picker("Select Currency", selection: $currencyCode) {
+//                ForEach(forexViewModel.searchCurrencyModel) { currency in
 //                    HStack {
-//                        Text(datum.currencyName)
+//                        Text(currency.currencyName)
 //                        Spacer()
-//                        Text(datum.currencyCode)
-//                    }
-//                    .contentShape(Rectangle()) // Make the entire row tappable
-//                    .onTapGesture {
-//                        myCurrencyCode = datum.currencyCode
-//                        forexViewModel.showFirstSheet.toggle() // Dismiss sheet after selection
+//                        Text(currency.currencyCode)
 //                    }
 //                }
 //            }
-//            .navigationTitle("Select Currency")
-//            .navigationBarTitleDisplayMode(.inline)
+//            .pickerStyle(WheelPickerStyle())
+//            .presentationDetents([.medium])
 //        }
-//        .onChange(of: forexViewModel.searchTextField) { newValue in
+//        .padding()
+//        .onChange(of: forexViewModel.searchTextField) {
 //            forexViewModel.searchCountry()
 //        }
 //    }
 //}
 //
+//// Preview for the ForexView
 //#Preview {
 //    NavigationStack {
 //        ForexView()

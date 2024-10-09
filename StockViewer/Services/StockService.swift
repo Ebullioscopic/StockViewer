@@ -345,8 +345,8 @@ class StockService: ServiceProtocol {
     
     func fetchMarketStatus() async throws -> MarketStatus {
         print("Building URL for AlphaVantage market status")
-        guard let url = URL(string: "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=demo") else {
-        //guard let url = URL(string: "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=\(Helper.API_kEY)") else {
+        //guard let url = URL(string: "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=demo") else {
+        guard let url = URL(string: "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=\(Helper.API_kEY)") else {
             print("Invalid URL")
             throw URLError(.badURL)
         }
