@@ -4,29 +4,43 @@ StockViewer is an iOS application built with Swift and SwiftUI that allows users
 
 ## Features
 
-### 1. Forex Exchange Rate
+### 1. Stock News Sentiment
+- Retrieve real-time sentiment analysis for stocks using AlphaVantage's **NEWS_SENTIMENT** feature.
+
+![Stock News Sentiment](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/News-StockViewer-v2.png)
+
+### 2. Top-Traded Stocks
+- Display a list of top gainers and losers using the **TOP_GAINERS_LOSERS** function from AlphaVantage.
+
+![Top-Traded Stocks](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TopTickers-StockViewer-v2.png)
+
+### 3. Previous Close Data
+- Get previous close price for a specific stock ticker via the Polygon.io API.
+
+![Previous Close Data](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)
+
+### 4. Detailed Stock Data
+- Fetch a detailed historical analysis of a stock using the **TICKER DETAIL** function from Polygon.io.
+
+![Detailed Stock Data](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TickerDetail-StockViewer-v2.png)
+
+### 5. Search Stock Symbol
+- Search for stock tickers using **SYMBOL_SEARCH** provided by AlphaVantage.
+
+![Search Stock Symbol](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)
+
+### 6. Market Status
+- Check whether the market is open or closed using the **MARKET_STATUS** function from AlphaVantage.
+
+![Market Status](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/MarketStatus-StockViewer-v2.png)
+
+### 7. Forex Exchange Rate
 - The app allows users to convert between different currencies.
 - Two services are provided for this:
     - **Polygon API**: For getting exchange rates between currencies.
     - **AlphaVantage API**: An alternate API for fetching forex exchange rates.
 
-### 2. Stock News Sentiment
-- Retrieve real-time sentiment analysis for stocks using AlphaVantage's **NEWS_SENTIMENT** feature.
-
-### 3. Top-Traded Stocks
-- Display a list of top gainers and losers using the **TOP_GAINERS_LOSERS** function from AlphaVantage.
-
-### 4. Previous Close Data
-- Get previous close price for a specific stock ticker via the Polygon.io API.
-
-### 5. Detailed Stock Data
-- Fetch a detailed historical analysis of a stock using the **TICKER DETAIL** function from Polygon.io.
-
-### 6. Search Stock Symbol
-- Search for stock tickers using **SYMBOL_SEARCH** provided by AlphaVantage.
-
-### 7. Market Status
-- Check whether the market is open or closed using the **MARKET_STATUS** function from AlphaVantage.
+![Forex Exchange Rate](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/Forex-StockViewer-v2.png)
 
 ## Installation
 
