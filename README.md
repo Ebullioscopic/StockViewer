@@ -4,6 +4,38 @@ StockViewer is an iOS application built with **Swift** and **SwiftUI** that prov
 
 [![StockViewer Preview](https://github.com/Ebullioscopic/StockViewer/blob/main/ScreenRecordings/v2/ScreenRecording-StockViewer-v2.gif)](https://github.com/Ebullioscopic/StockViewer/blob/main/ScreenRecordings/v2/ScreenRecording-StockViewer-v2.gif)
 
+## Navigation
+
+- [Features](#features)
+  - [1. Stock News Sentiment](#1-stock-news-sentiment)
+  - [2. Top-Traded Stocks](#2-top-traded-stocks)
+  - [3. Previous Close Data](#3-previous-close-data)
+  - [4. Detailed Stock Data](#4-detailed-stock-data)
+  - [5. Search Stock Symbol](#5-search-stock-symbol)
+  - [6. Market Status](#6-market-status)
+  - [7. Forex Exchange Rate](#7-forex-exchange-rate)
+- [Installation](#installation)
+  - [Steps to Set Up](#steps-to-set-up)
+  - [Setting Up API Keys](#setting-up-api-keys)
+  - [Adding `APIKeys.plist` to Xcode](#adding-apikeysplist-to-xcode)
+- [Running the Application](#running-the-application)
+- [Usage](#usage)
+  - [Forex Conversion](#7-forex-exchange-rate)
+  - [Stock Sentiment](#1-stock-news-sentiment)
+  - [Top-Traded Stocks](#2-top-traded-stocks)
+  - [Previous Close Data](#3-previous-close-data)
+  - [Search Stock Symbol](#5-search-stock-symbol)
+  - [Market Status](#6-market-status)
+- [Project Structure](#project-structure)
+- [API Services](#api-services)
+- [Example API Requests](#example-api-requests)
+- [Troubleshooting](#troubleshooting)
+  - [Common Issues](#common-issues)
+- [License](#license)
+- [Contributors](#contributors)
+
+---
+
 ## Features
 
 ### 1. [Stock News Sentiment](#1-stock-news-sentiment)
@@ -131,60 +163,45 @@ To run the app:
   - `StockViewModel.swift`: Fetches and handles stock data, top-traded stocks, and ticker details.
 
 - **Service Layer**:
-  - `StockService.swift`: Contains methods for fetching data from AlphaVantage and Polygon.io APIs.
+  - `StockService.swift`: Contains methods for fetching data from AlphaVantage
+
+ and Polygon.io APIs.
 
 ## API Services
 
-StockViewer utilizes two primary APIs:
+The app relies on two APIs for stock market and financial data:
 
-1. **AlphaVantage API**:
-   - Provides forex exchange rates, news sentiment, top-traded stocks, symbol searches, and market status.
-   - API Documentation: [AlphaVantage API](https://www.alphavantage.co/documentation/)
-
-2. **Polygon.io API**:
-   - Fetches previous close price and detailed stock analysis.
-   - API Documentation: [Polygon.io API](https://polygon.io/docs/)
+1. **AlphaVantage API**: Provides forex data, news sentiment, top-traded stocks, stock symbol search, and market status.
+2. **Polygon.io API**: Supplies detailed stock data and previous closing prices.
 
 ## Example API Requests
 
-### Forex Exchange Example (AlphaVantage):
-
-```bash
+### AlphaVantage Forex Exchange Request:
+```
 https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=YOUR_API_KEY
 ```
 
-### Stock News Sentiment Example (AlphaVantage):
-
-```bash
+### AlphaVantage Stock News Sentiment Request:
+```
 https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&apikey=YOUR_API_KEY
 ```
 
-### Previous Close Example (Polygon.io):
-
-```bash
+### Polygon.io Previous Close Data Request:
+```
 https://api.polygon.io/v2/aggs/ticker/AAPL/prev?adjusted=true&apiKey=YOUR_API_KEY
 ```
 
 ## Troubleshooting
 
-### Common Issues:
+### Common Issues
 
-1. **Invalid API Key**:
-   - Ensure you’ve properly set up your API keys in the `APIKeys.plist` file.
-   - Confirm your API key on the AlphaVantage or Polygon.io dashboard.
-
-2. **Network Errors**:
-   - Check your internet connection.
-   - Verify the availability of the AlphaVantage or Polygon.io APIs.
-
-3. **Invalid URL**:
-   - Ensure you are using valid currency codes or stock symbols when making requests.
+1. **Invalid API Key**: Double-check that your API keys are correctly added to the `APIKeys.plist` file.
+2. **Network Errors**: Ensure your device is connected to the internet and that the API services are not down.
+3. **Invalid URL**: Ensure that the currency codes or stock symbols in your requests are valid.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for
-
- details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributors
 
