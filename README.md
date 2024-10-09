@@ -2,6 +2,8 @@
 
 StockViewer is an iOS application built with Swift and SwiftUI that allows users to access real-time forex exchange rates, stock market data, news sentiment, and top-traded stocks. The app utilizes the AlphaVantage and Polygon.io APIs to retrieve the necessary data.
 
+![StockViewer Preview](https://github.com/Ebullioscopic/StockViewer/blob/main/ScreenRecordings/v2/ScreenRecording-StockViewer-v2.gif)
+
 ## Features
 
 ### 1. Stock News Sentiment
