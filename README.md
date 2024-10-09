@@ -196,3 +196,6 @@ https://api.polygon.io/v2/aggs/ticker/AAPL/prev?adjusted=true&apiKey=YOUR_API_KE
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Contributors
+
+- [Ebullioscopic](https://github.com/Ebullioscopic)
