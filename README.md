@@ -2,7 +2,8 @@
 
 StockViewer is an iOS application built with **Swift** and **SwiftUI** that provides users with real-time forex exchange rates, stock market data, news sentiment analysis, and the latest information on top-traded stocks. The app leverages both **AlphaVantage** and **Polygon.io** APIs to retrieve this data efficiently.
 
-[![StockViewer Preview](https://github.com/Ebullioscopic/StockViewer/blob/main/ScreenRecordings/v2/ScreenRecording-StockViewer-v2.gif)](https://github.com/Ebullioscopic/StockViewer/blob/main/ScreenRecordings/v2/ScreenRecording-StockViewer-v2.gif)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/ScreenRecordings/v2/ScreenRecording-StockViewer-v2.gif" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/ScreenRecordings/v2/ScreenRecording-StockViewer-v2.gif)
+
 
 ## Navigation
 
@@ -41,37 +42,38 @@ StockViewer is an iOS application built with **Swift** and **SwiftUI** that prov
 ### 1. [Stock News Sentiment](#1-stock-news-sentiment)
 - Get real-time sentiment analysis for stocks using AlphaVantage's **NEWS_SENTIMENT** feature.
 
-[![Stock News Sentiment](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/News-StockViewer-v2.png)](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/News-StockViewer-v2.png)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/News-StockViewer-v2.png" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/News-StockViewer-v2.png)
 
 ### 2. [Top-Traded Stocks](#2-top-traded-stocks)
 - View a list of top gainers and losers using AlphaVantage's **TOP_GAINERS_LOSERS** function.
 
-[![Top-Traded Stocks](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TopTickers-StockViewer-v2.png)](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TopTickers-StockViewer-v2.png)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TopTickers-StockViewer-v2.png" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TopTickers-StockViewer-v2.png)
 
 ### 3. [Previous Close Data](#3-previous-close-data)
 - Retrieve the previous closing price for a specific stock using the Polygon.io API.
 
-[![Previous Close Data](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)
 
 ### 4. [Detailed Stock Data](#4-detailed-stock-data)
 - Fetch detailed historical stock data via Polygon.io’s **TICKER DETAIL** function.
 
-[![Detailed Stock Data](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TickerDetail-StockViewer-v2.png)](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TickerDetail-StockViewer-v2.png)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TickerDetail-StockViewer-v2.png" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/TickerDetail-StockViewer-v2.png)
 
 ### 5. [Search Stock Symbol](#5-search-stock-symbol)
 - Search for stock tickers using AlphaVantage’s **SYMBOL_SEARCH** function.
 
-[![Search Stock Symbol](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/SearchBar-StockViewer-v2.png)
 
 ### 6. [Market Status](#6-market-status)
 - Check if the stock market is currently open or closed using AlphaVantage’s **MARKET_STATUS** function.
 
-[![Market Status](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/MarketStatus-StockViewer-v2.png)](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/MarketStatus-StockViewer-v2.png)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/MarketStatus-StockViewer-v2.png" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/MarketStatus-StockViewer-v2.png)
 
 ### 7. [Forex Exchange Rate](#7-forex-exchange-rate)
 - Convert between two currencies using services from both the **Polygon.io** and **AlphaVantage** APIs.
 
-[![Forex Exchange Rate](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/Forex-StockViewer-v2.png)](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/Forex-StockViewer-v2.png)
+[<img src="https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/Forex-StockViewer-v2.png" width="400">](https://github.com/Ebullioscopic/StockViewer/blob/main/Screenshots/v2/Forex-StockViewer-v2.png)
+
 
 ## Installation
 
