@@ -63,16 +63,17 @@ StockViewer is an iOS application built with **Swift** and **SwiftUI** that prov
 </details>
 
 <details>
-<summary>Example API Requests</summary>
-
-- [Example API Requests](#example-api-requests)
-
-</details>
-
-<details>
 <summary>Troubleshooting</summary>
 
 - [Common Issues](#common-issues)
+
+
+<details>
+<summary>Contributors</summary>
+
+- [Contributors](#contributors)
+
+</details>
 
 </details>
 
@@ -82,14 +83,6 @@ StockViewer is an iOS application built with **Swift** and **SwiftUI** that prov
 - [License](#license)
 
 </details>
-
-<details>
-<summary>Contributors</summary>
-
-- [Contributors](#contributors)
-
-</details>
-
 
 ---
 
@@ -232,23 +225,6 @@ The app relies on two APIs for stock market and financial data:
 1. **AlphaVantage API**: Provides forex data, news sentiment, top-traded stocks, stock symbol search, and market status.
 2. **Polygon.io API**: Supplies detailed stock data and previous closing prices.
 
-## Example API Requests
-
-### AlphaVantage Forex Exchange Request:
-```
-https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=EUR&apikey=YOUR_API_KEY
-```
-
-### AlphaVantage Stock News Sentiment Request:
-```
-https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers=AAPL&apikey=YOUR_API_KEY
-```
-
-### Polygon.io Previous Close Data Request:
-```
-https://api.polygon.io/v2/aggs/ticker/AAPL/prev?adjusted=true&apiKey=YOUR_API_KEY
-```
-
 ## Troubleshooting
 
 ### Common Issues
@@ -257,10 +233,10 @@ https://api.polygon.io/v2/aggs/ticker/AAPL/prev?adjusted=true&apiKey=YOUR_API_KE
 2. **Network Errors**: Ensure your device is connected to the internet and that the API services are not down.
 3. **Invalid URL**: Ensure that the currency codes or stock symbols in your requests are valid.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=Ebullioscopic/StockViewer)](https://github.com/Ebullioscopic/StockViewer/graphs/contributors)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
