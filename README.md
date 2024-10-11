@@ -7,33 +7,89 @@ StockViewer is an iOS application built with **Swift** and **SwiftUI** that prov
 
 ## Navigation
 
-- [Features](#features)
-  - [1. Stock News Sentiment](#1-stock-news-sentiment)
-  - [2. Top-Traded Stocks](#2-top-traded-stocks)
-  - [3. Previous Close Data](#3-previous-close-data)
-  - [4. Detailed Stock Data](#4-detailed-stock-data)
-  - [5. Search Stock Symbol](#5-search-stock-symbol)
-  - [6. Market Status](#6-market-status)
-  - [7. Forex Exchange Rate](#7-forex-exchange-rate)
-- [Installation](#installation)
-  - [Steps to Set Up](#steps-to-set-up)
-  - [Setting Up API Keys](#setting-up-api-keys)
-  - [Adding `APIKeys.plist` to Xcode](#adding-apikeysplist-to-xcode)
+<details>
+<summary>Features</summary>
+
+- [1. Stock News Sentiment](#1-stock-news-sentiment)
+- [2. Top-Traded Stocks](#2-top-traded-stocks)
+- [3. Previous Close Data](#3-previous-close-data)
+- [4. Detailed Stock Data](#4-detailed-stock-data)
+- [5. Search Stock Symbol](#5-search-stock-symbol)
+- [6. Market Status](#6-market-status)
+- [7. Forex Exchange Rate](#7-forex-exchange-rate)
+
+</details>
+
+<details>
+<summary>Installation</summary>
+
+- [Steps to Set Up](#steps-to-set-up)
+- [Setting Up API Keys](#setting-up-api-keys)
+- [Adding `APIKeys.plist` to Xcode](#adding-apikeysplist-to-xcode)
+
+</details>
+
+<details>
+<summary>Running the Application</summary>
+
 - [Running the Application](#running-the-application)
-- [Usage](#usage)
-  - [Forex Conversion](#7-forex-exchange-rate)
-  - [Stock Sentiment](#1-stock-news-sentiment)
-  - [Top-Traded Stocks](#2-top-traded-stocks)
-  - [Previous Close Data](#3-previous-close-data)
-  - [Search Stock Symbol](#5-search-stock-symbol)
-  - [Market Status](#6-market-status)
+
+</details>
+
+<details>
+<summary>Usage</summary>
+
+- [Forex Conversion](#7-forex-exchange-rate)
+- [Stock Sentiment](#1-stock-news-sentiment)
+- [Top-Traded Stocks](#2-top-traded-stocks)
+- [Previous Close Data](#3-previous-close-data)
+- [Search Stock Symbol](#5-search-stock-symbol)
+- [Market Status](#6-market-status)
+
+</details>
+
+<details>
+<summary>Project Structure</summary>
+
 - [Project Structure](#project-structure)
+
+</details>
+
+<details>
+<summary>API Services</summary>
+
 - [API Services](#api-services)
+
+</details>
+
+<details>
+<summary>Example API Requests</summary>
+
 - [Example API Requests](#example-api-requests)
-- [Troubleshooting](#troubleshooting)
-  - [Common Issues](#common-issues)
+
+</details>
+
+<details>
+<summary>Troubleshooting</summary>
+
+- [Common Issues](#common-issues)
+
+</details>
+
+<details>
+<summary>License</summary>
+
 - [License](#license)
+
+</details>
+
+<details>
+<summary>Contributors</summary>
+
 - [Contributors](#contributors)
+
+</details>
+
 
 ---
 
@@ -82,7 +138,7 @@ StockViewer is an iOS application built with **Swift** and **SwiftUI** that prov
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/StockViewer.git
+   git clone https://github.com/Ebullioscopic/StockViewer.git
    cd StockViewer
    ```
 
@@ -207,4 +263,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contributors
 
-- [Ebullioscopic](https://github.com/Ebullioscopic)
+[![Contributors](https://contrib.rocks/image?repo=Ebullioscopic/StockViewer)](https://github.com/Ebullioscopic/StockViewer/graphs/contributors)
